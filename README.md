@@ -1,2 +1,2 @@
-# svet-newspaper-material
-Ethnic newspaper
+# Social Update for business and personal services
+
