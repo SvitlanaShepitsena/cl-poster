@@ -3,10 +3,10 @@
 
     angular.module('common')
         .value('s3', {files: []})
-        .directive('svOnePhotoGallery', function (AWSServ, $mdDialog, dt, $timeout) {
+        .directive('svOnePhotoAlbum', function (AWSServ, $mdDialog, dt, $timeout) {
             return {
                 replace: true,
-                templateUrl: 'scripts/common/directives/sv-one-photo-gallery.html',
+                templateUrl: 'scripts/common/directives/sv-one-photo-album.html',
                 scope: {},
                 link: function ($scope, el, attrs) {
                     $scope.bucketUrl = "https://s3-us-west-2.amazonaws.com/chicagoview/";

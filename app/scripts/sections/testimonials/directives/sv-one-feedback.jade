@@ -1,7 +1,13 @@
-.card.m.p
-    div {{feedback.body}}
-    div {{feedback.company}}
-    div {{feedback.timestamp|date}}
-    div(ng-if='user.isManager() || feedback.authorKey==user.key')
-        button.btn.btn--xs.btn--blue.btn--raised(lx-ripple='' ng-click='editFeedback()') Edit
-        button.btn.btn--xs.btn--red.btn--raised(lx-ripple='' ng-click="removeSvFeedback(feedback)"  sv-confirm-deletion='feedback') Delete
+.card
+    div(class='p+ mb')
+        span.display-block.fs-caption {{feedback.timestamp|date}}
+        span.display-block.fs-subhead {{feedback.company}}
+        span.display-block.fs-body-1 {{feedback.body}}
+    div(class='pl pr pb mb')
+        div(ng-if='user.isManager() || feedback.authorKey==user.key' class='mt')
+            button.btn.btn--xs.btn--white.tc-teal-300.btn--raised.ml.mr(lx-ripple='' ng-click='editFeedback()')
+                i.fa.fa-pencil.fa-fw &nbsp
+                | Edit
+            button.btn.btn--xs.btn--white.tc-red-300.btn--raised.ml.mr(lx-ripple='' ng-click="removeSvFeedback(feedback)"  sv-confirm-deletion='feedback')
+                i.fa.fa-trash.fa-fw &nbsp
+                | Delete

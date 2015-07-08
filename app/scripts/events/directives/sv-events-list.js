@@ -12,7 +12,6 @@
                 link: function ($scope, el, attrs) {
                     $scope.isFuture = true;
 
-
                     $scope.$watchCollection(function () {
                         return svetEventsConst.evts;
                     }, function (newValue, oldValue) {

@@ -1,7 +1,6 @@
 (function () {
     'use strict'
-    //var fbDomain = 'svet';
-    var fbDomain = 'svet-test';
+    var fbDomain = 'sv-app-test';
     angular.module('common')
         .constant('domain', fbDomain === 'svet' ? 'production' : 'test')
         .constant('url', 'https://' + fbDomain + '.firebaseio.com/')
