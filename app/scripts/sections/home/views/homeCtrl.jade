@@ -1,25 +1,12 @@
 div(layout-sm='column', layout-md='column', layout-gt-md='row', layout-lg='column', layout-gt-lg='column')
-    div(layout-gt-sm='row' layout-align="top center" style='width:100hv;max-width:100hv' class='mb ml mr')
-        div(flex-gt-sm='66')
-            sv-top-news(news='news' class='mb+ ml mr')
-        div(flex-gt-sm='33')
-            sv-from-the-editor(class="mb+ ml mr")
-            div( style="min-height:234px")
-                sv-radio-osa(class='mb+ ml mr' title="radio" body='radio-body')
-    sv-second-news(lower-limit='2' higher-limit='3' news='news' class='ml mr')
-    div(layout-gt-sm='row' class='mb ml mr')
-        sv-home-ad(place='home.middle')
-    div(layout-gt-sm='row' class='ml mr')
-        div(flex='')
-            sv-article-thumb-title(class="ml mr mb+" section-title="svet-recommends" section-icon="star" bgc="bgc-svet-700" tc="tc-grey-50" tags='chicago children')
-        div(flex='')
-            sv-article-thumb-title(class="ml mr mb+" section-title="only-on-svet" section-icon="bell" bgc="bgc-svet-700" tc="tc-grey-50" tags='svet')
-        div(flex='')
-            sv-article-thumb-title(class="ml mr mb+" section-title="personality" section-icon="clipboard-account" bgc="bgc-svet-700" tc="tc-grey-50" tags='personality')
-    span.display-block.fs-display-1.mdc-underline-red.mt.mb(class='mb+ ml+ mr+') {{'this-week-news'|translate|uppercase}}
-    sv-news-grid(news='news' exclude='3' class='ml mr')
-    div(layout-gt-sm='row' class='ml mr')
-        //sv-article-thumb-title(bgc="bgc-grey-600" tc="tc-grey-50" class="ml mr mb+" section-title="digest" section-icon="view-list" )
-        //sv-article-thumb-title(bgc="bgc-grey-600" tc="tc-grey-50" class="ml mr mb+" section-title="history" )
-        //sv-article-thumb-title(bgc="bgc-grey-600" tc="tc-grey-50" class="ml mr mb+" section-title="svet-blog" section-icon="clipboard-account" )
-
+    md-content
+        .card.m.md-padding
+            span.display-block.fs-display-1.text-center At vero eos et accusamus et iusto odio dignissimos ducimus
+            md-divider(class='mt mb+')
+            span.display-block.fs-title At vero eos et accusamus et iusto odio dignissimos ducimus
+            p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+        .card.m.md-padding
+            span.display-block.fs-display-1 At vero eos et accusamus et iusto odio dignissimos ducimus
+            md-divider(class='mt mb+')
+            span.display-block.fs-title At vero eos et accusamus et iusto odio dignissimos ducimus
+            p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat

@@ -98,7 +98,12 @@
             <md-toolbar class="md-hue-1 text-center" layout='row' sv-nav-bar-media layout-align='space-around center'>
                 <!--<span class="mdc-subhead" hide-sm hide-gt-sm show-gt-md>Наши новости</span>-->
                 <a class="logo-link fs-caption" ui-sref="app.home">
-                    <img style='width:90px' src="https://s3-us-west-2.amazonaws.com/chicagopics/abstract-logo.png" class="logo-img" alt="Logo">
+                    <img style='width:40px;opacity:.8'
+                         src="https://s3-us-west-2.amazonaws.com/chicagopics/abstract-logo.png"
+                         class="logo-img" alt="Logo">
+                    <span class="fs-subhead tc-blue-grey-500">
+                        Company Logo
+                    </span>
                 </a>
                 <button class='btn btn--m btn--icon btn--black mr' sv-left-click-handler="" hide-gt-md=""
                         aria-label="close left" class="txt-white sv-md-button">
@@ -107,9 +112,7 @@
             </md-toolbar>
             <md-content layout-padding flex>
                 <sv-news-sections-nav class="mb"></sv-news-sections-nav>
-                <sv-sidenav-title title="Something interesting" class="mb"></sv-sidenav-title>
-                <sv-sidenav-ad ad-title="Yor Advertisement" body="Any info..."></sv-sidenav-ad>
-                <div class='mt+'></div>
+
                 <sv-nav-btn url="app.section({sectionName:'svet-recommends'})"
                             icon-type="fa"
                             title="Link 1"
@@ -136,6 +139,9 @@
                             icon="tag"
                             btn-size="l"
                             class="mb"></sv-nav-btn>
+                <sv-sidenav-title title="Something interesting" class="mb"></sv-sidenav-title>
+                <sv-sidenav-ad ad-title="Yor Advertisement" body="Any info..."></sv-sidenav-ad>
+                <div class='mt+'></div>
             </md-content>
         </md-sidenav>
 
@@ -144,17 +150,12 @@
             <!--Top Toolbar-->
             <md-toolbar layout="row" class="md-hue-1" sv-nav-bar-media style='padding:0px 4px'
                         layout-align="center center">
-                <button class='btn btn--xl btn--icon'
-                        style="width:36px"
+                <button class='btn btn--xl btn--icon' style="width:36px"
                         hide-gt-md sv-left-click-handler="" aria-label="Show User List">
                     <md-icon md-svg-icon="sv-menu"></md-icon>
                 </button>
-                <!--<span flex ng-if="main.showShifter"></span>-->
-                <sv-header-classified-btn></sv-header-classified-btn>
-                <!--<sv-header-subscription-btn hide-sm></sv-header-subscription-btn>-->
-                <!--<span flex></span>-->
                 <div class='md-whiteframe-z1 p' hide-sm hide-gt-sm hide-md show-gt-md>
-                    <sv-classified-header-phone></sv-classified-header-phone>
+                    <sv-header-phone></sv-header-phone>
                 </div>
                 <span flex></span>
                 <sv-profile-type class='mr'></sv-profile-type>
@@ -195,7 +196,7 @@
                     <!--if your sidenav background has color, add flex to fill sidenav vertically-->
                     <md-content class="pt" flex>
                         <div class="mr ml">
-                            <sv-sidenav-title title="why svet media group?"></sv-sidenav-title>
+                            <sv-sidenav-title title="For our partners"></sv-sidenav-title>
 
                             <sv-nav-btn url="app.about.about-tab-content"
                                         icon-type="fa"
@@ -228,17 +229,8 @@
                                         btn-size="l"
                                         class="mb">
                             </sv-nav-btn>
-                            <sv-svet-social></sv-svet-social>
-                            <sv-nav-btn url="app.classified.community"
-                                        icon-type="fa"
-                                        icon="bullhorn"
-                                        title="classified"
-                                        bgc="red-800"
-                                        custom-class="sv-color-7"
-                                        custom-style="font-weight:600"
-                                        color="red" btn-size="m"
-                                        class="mb++"></sv-nav-btn>
-                            <sv-sidenav-title title="new-classified" icon-type="mdi"
+                            <sv-link-with-pic></sv-link-with-pic>
+                            <sv-sidenav-title title="Ad Slider" icon-type="mdi"
                                               icon-name="mdi-clock-fast">
                             </sv-sidenav-title>
                         </div>
@@ -652,11 +644,12 @@
 <script src="scripts/sections/home/directives/sv-news-grid.js"></script>
 <script src="scripts/sections/home/directives/sv-second-news.js"></script>
 <script src="scripts/sections/home/directives/sv-section-select-handler.js"></script>
-<script src="scripts/sections/home/directives/sv-svet-social.js"></script>
+<script src="scripts/sections/home/directives/sv-link-with-pic.js"></script>
 <script src="scripts/sections/home/directives/sv-home-main-news.js"></script>
 <script src="scripts/sections/home/directives/sv-news-sections-nav.js"></script>
 <script src="scripts/sections/home/services/NewsProcessServ.js"></script>
 <script src="scripts/sections/home/services/NewsServ.js"></script>
+<script src="scripts/sections/home/directives/sv-header-phone.js"></script>
 
 <!-- sections.radio -->
 <script src="scripts/sections/radio/radioRoutes.js"></script>
@@ -664,7 +657,6 @@
 <script src="scripts/sections/radio/radio-translation.js"></script>
 <script src="scripts/sections/radio/services/RadioServ.js"></script>
 <script src="scripts/sections/radio/directives/sv-radio-list.js"></script>
-<script src="scripts/sections/home/directives/sv-classified-header-phone.js"></script>
 <script src="scripts/sections/radio/directives/sv-radio-osa.js"></script>
 
 <!-- sections.widgets -->
