@@ -24,7 +24,6 @@
         'common',
         'sections.header',
         'sections.about',
-        'sections.demographics',
         'sections.archive',
         'sections.home',
         'sections.contact',

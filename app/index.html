@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Craiglist Poster</title>
+    <title>Your Company Information</title>
     <base href="/">
     <meta name="fragment" content="!"/>
     <meta charset="utf-8">
@@ -113,14 +113,6 @@
             <md-content layout-padding flex>
                 <sv-news-sections-nav class="mb"></sv-news-sections-nav>
 
-                <sv-nav-btn url="app.section({sectionName:'svet-recommends'})"
-                            icon-type="fa"
-                            title="Link 1"
-                            icon="tag"
-                            txt-color="white-1"
-                            bgc="red-900"
-                            custom-class="sv-color-7"
-                            color="red" btn-size="l" class="mb"></sv-nav-btn>
                 <sv-nav-btn url="app.events.calendar"
                             icon-type="fa"
                             title="Link 2"
@@ -209,7 +201,7 @@
                                         btn-size="l"
                                         class="mb">
                             </sv-nav-btn>
-                            <sv-nav-btn url="app.testimonials"
+                            <sv-nav-btn url="app.about.testimonials-tab-content"
                                         icon-type="mdi"
                                         icon="account-star"
                                         custom-style="font-weight:500"
@@ -494,7 +486,6 @@
 <script src="scripts/article/services/CommentsServ.js"></script>
 <script src="scripts/article/controllers/HomepageRankCtrl.js"></script>
 <script src="scripts/article/controllers/CreateArticleCtrl.js"></script>
-<script src="scripts/article/controllers/SvetRecommendsCtrl.js"></script>
 <script src="scripts/article/controllers/ArticleCtrl.js"></script>
 <script src="scripts/article/directives/sv-article-make-top-btn.js"></script>
 <script src="scripts/article/directives/sv-tag-selector.js"></script>
@@ -593,7 +584,6 @@
 <!-- sections.about -->
 <script src="scripts/sections/about/aboutRoutes.js"></script>
 <script src="scripts/sections/about/controllers/AboutCtrl.js"></script>
-<script src="scripts/sections/about/controllers/DemographicsTabContentCtrl.js"></script>
 <script src="scripts/sections/about/controllers/AboutTabContentCtrl.js"></script>
 <script src="scripts/sections/about/controllers/GoogleAnalyticsCtrl.js"></script>
 <script src="scripts/sections/about/directives/sv-about-tabs.js"></script>
@@ -601,24 +591,17 @@
 <script src="scripts/sections/about/directives/sv-about-svet.js"></script>
 <script src="scripts/sections/about/directives/sv-top-ru-speaking.js"></script>
 
-<!-- sections.demographics -->
-<script src="scripts/sections/demographics/demographicsRoutes.js"></script>
-<script src="scripts/sections/demographics/directives/sv-open-dialog-btn.js"></script>
-<script src="scripts/sections/demographics/directives/sv-ru-attractive-market.js"></script>
-<script src="scripts/sections/demographics/directives/sv-top-ru-states.js"></script>
-<script src="scripts/sections/demographics/directives/sv-ru-demographics.js"></script>
-<script src="scripts/sections/demographics/directives/sv-demographics-tabs.js"></script>
-<script src="scripts/sections/demographics/demographics-translation.js"></script>
 
 <!-- sections.testimonials -->
 <script src="scripts/sections/testimonials/testimonialsRoutes.js"></script>
+<script src="scripts/sections/testimonials/controllers/TestimonialsCtrl.js"></script>
+<script src="scripts/sections/about/controllers/TestimonialsTabContentCtrl.js"></script>
 <script src="scripts/sections/testimonials/directives/sv-one-feedback.js"></script>
 <script src="scripts/sections/testimonials/directives/sv-feedback-list.js"></script>
 <script src="scripts/sections/testimonials/services/FeedbackServ.js"></script>
 <script src="scripts/sections/testimonials/directives/sv-add-feedback.js"></script>
 <script src="scripts/sections/testimonials/directives/sv-one-client-link.js"></script>
 <script src="scripts/sections/testimonials/testimonials-translation.js"></script>
-<script src="scripts/sections/testimonials/controllers/TestimonialsCtrl.js"></script>
 
 <!-- sections.contact -->
 <script src="scripts/sections/contact/contactRoutes.js"></script>

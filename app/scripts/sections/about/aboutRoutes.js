@@ -15,10 +15,10 @@
                     url: "/about-tab-content",
                     templateUrl: "scripts/sections/about/views/about-tab-contentCtrl.html"
                 })
-                .state("app.about.demographics-tab-content", {
-                    url: "/demographics-tab-content",
-                    controller: "DemographicsTabContentCtrl",
-                    templateUrl: "scripts/sections/about/views/demographics-tab-contentCtrl.html"
+                .state("app.about.testimonials-tab-content", {
+                    url: "/testimonials-tab-content",
+                    controller: "TestimonialsTabContentCtrl",
+                    templateUrl: "scripts/sections/about/views/testimonials-tab-contentCtrl.html"
                 })
                 .state("app.about.google-analytics", {
                     url: "/google-analytics",

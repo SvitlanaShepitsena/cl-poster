@@ -20,10 +20,10 @@
                     },
                     templateUrl: "scripts/article/views/create-articleCtrl.html"
                 })
-                .state("app.svet-recommends", {
-                    url: "/svet-recommends",
-                    controller: "SvetRecommendsCtrl as svetRecommends",
-                    templateUrl: "scripts/article/views/svet-recommendsCtrl.html"
+                .state("app.our-services", {
+                    url: "/our-services",
+                    controller: "OurServicesCtrl as ourServices",
+                    templateUrl: "scripts/article/views/our-servicesCtrl.html"
                 })
                 //.state("app.one-blog", {
                 //    url: "/svet-blog/:author/:postId",
