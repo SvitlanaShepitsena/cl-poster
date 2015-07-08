@@ -5,9 +5,9 @@ form.m(name='eventAfishaForm' ng-submit='createAfishaEvent(eventAfishaForm.$vali
         ng-model='event.type'
         name="type"
         required="")
-            md-radio-button(value='public') Svet Public Event
-            md-radio-button(value='connection') Svet Russian Media Group Connection Event
-            md-radio-button(value='community') Chicago Community Event
+            md-radio-button(value='public') Public Event
+            md-radio-button(value='connection') Business Event
+            md-radio-button(value='community') Community Event
     md-input-container
         label Title
         input(required='', name='title', ng-model='event.title')
@@ -35,17 +35,17 @@ form.m(name='eventAfishaForm' ng-submit='createAfishaEvent(eventAfishaForm.$vali
         label About Event
         textarea.bgc-grey-100(type='text' name='about' required='' rows='3' ng-model='event.about')
     md-input-container
-        label {{'purchase-tickets'|translate}}
+        label Purchase Tickets
         input(type='text' required='' name='tickets' ng-model='event.tickets')
     div(layout='column' class='mb+')
-        span.mdc-display-inline-block.fs-subhead.tc-grey-700(class='mt') {{'upload-img'|translate}}
+        span.mdc-display-inline-block.fs-subhead.tc-grey-700(class='mt') Upload Image
         div(ng-if='event.editState')
             img(ng-src='{{event.img}}')
         sv-image-upload
     div(class='mb+' layout="row" layout-align='end')
         button.btn.btn--s.btn--raised.btn--black.bgc-grey-600.mr(type='submit')
-            i.mdi.mdi-save(ng-if='!event.$id') &nbsp {{'save'|translate}}
-            i.mdi.mdi-plus(ng-if='event.$id') &nbsp {{'save-changes'|translate}}
+            i.mdi.mdi-save(ng-if='!event.$id') &nbsp Save
+            i.mdi.mdi-plus(ng-if='event.$id') &nbsp Save Changes
         button.btn.btn--s.btn--raised.btn--white(ng-click='hide()')
             i.mdi.mdi-close &nbsp
-            | {{'cancel'|translate}}
+            | Cancel

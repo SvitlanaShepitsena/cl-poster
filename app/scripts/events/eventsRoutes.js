@@ -30,10 +30,10 @@
                     controller: "RaviniaEventCtrl as raviniaEvent",
                     templateUrl: "scripts/events/views/ravinia-eventCtrl.html"
                 })
-                .state("app.events.kohl2015", {
-                    url: "/kohl2015",
-                    controller: "Kohl2015Ctrl",
-                    templateUrl: "scripts/events/views/kohl2015Ctrl.html"
+                .state("app.events.photoAlbums", {
+                    url: "/photoAlbums",
+                    controller: "PhotoAlbumsCtrl",
+                    templateUrl: "scripts/events/views/photoAlbumsCtrl.html"
                 })
                 .state("app.events.one-event", {
                     url: "/one-event/:eid",

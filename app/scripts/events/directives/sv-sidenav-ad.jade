@@ -1,10 +1,10 @@
 .card
-    a.tc-grey-800(ng-click="closeSideBar()")
+    a.tc-grey-800(ui-sref='{{albumUrl}}' ng-click="closeSideBar()")
         .card__img.card__img--top(style='padding:0px !important')
-            img(ng-src="https://s3-us-west-2.amazonaws.com/chicagopics/chicago-view-color.jpg")
-            span.mdc-display-inline-block.fs-title.tc-white.bgc-white.sv-color-8(style='padding:0px 8px;margin: 0px -15px') {{adTitle}}
-            span.mdc-display-inline-block.fs-title.tc-white.bgc-grey-900.sv-color-7(style='padding:0px 8px;margin: 0px -15px') {{adTitle}}
+            img(ng-src="{{albumImg}}")
+            span.mdc-display-inline-block.fs-title.tc-white.bgc-white.sv-color-8(style='padding:0px 8px;margin: 0px -15px') {{albumTitle}}
+            span.mdc-display-inline-block.fs-title.tc-white.bgc-grey-900.sv-color-7(style='padding:0px 8px;margin: 0px -15px') {{albumTitle}}
         div(class='p+')
-            .fs-subhead {{adSubhead}}
+            .fs-subhead {{albumSubhead}}
             .paragraph.fs-body-1.mb
-                | {{adBody}}
+                | {{albumBody}}

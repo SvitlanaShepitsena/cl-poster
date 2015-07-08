@@ -9,8 +9,8 @@
                 templateUrl: 'scripts/common/directives/sv-one-photo-gallery.html',
                 scope: {},
                 link: function ($scope, el, attrs) {
-                    $scope.bucketUrl = "https://s3-us-west-2.amazonaws.com/kohl/";
-                    AWSServ.getImages('kohl').then(function (files) {
+                    $scope.bucketUrl = "https://s3-us-west-2.amazonaws.com/chicagoview/";
+                    AWSServ.getImages('chicagoview').then(function (files) {
                         $scope.images = files;
 
                     });
@@ -34,7 +34,7 @@
                     function DialogControllerInfo($scope, $mdDialog, dt, s3) {
                         var delay = 700;
 
-                        $scope.awsBase = 'https://s3-us-west-2.amazonaws.com/kohl/';
+                        $scope.awsBase = 'https://s3-us-west-2.amazonaws.com/chicagoview/';
                         $scope.imgIndex = dt.vm.currentIndex;
 
                         $scope.files = dt.vm.images;

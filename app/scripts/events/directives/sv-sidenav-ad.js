@@ -6,9 +6,11 @@
                 replace: true,
                 templateUrl: 'scripts/events/directives/sv-sidenav-ad.html',
                 scope: {
-                    adTitle: '@',
-                    adSubhead: '@',
-                    adBody: '@'
+                    albumUrl: '@',
+                    albumImg: '@',
+                    albumTitle: '@',
+                    albumSubhead: '@',
+                    albumBody: '@'
                 },
                 link: function ($scope, el, attrs) {
                     $scope.closeSideBar = function () {
