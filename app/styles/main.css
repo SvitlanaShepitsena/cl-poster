@@ -746,10 +746,10 @@ body {
   padding: 0px;
 }
 /*custom classes*/
-.bgc-svet-A100 {
+.bgc-sv-A100 {
   background-color: #474341;
 }
-.bgc-svet-700 {
+.bgc-sv-700 {
   background-color: #5c5654 !important;
 }
 .mdc-no-margin {
@@ -933,9 +933,6 @@ md-sidenav.md-locked-open {
   width: 270px !important;
   min-width: 270px !important;
   max-width: 270px !important;
-}
-.svet-logo {
-  width: 270px;
 }
 .logo-link {
   display: block;

@@ -4,7 +4,7 @@
         div(class='p+')
             div.p(layout='row' layout-align='space-between center')
                 span.fs-caption.display-block(style='font-weight:300;text-decoration:underline') {{news.topic|urlDecoderFr |uppercase}}
-                sv-svet-label(section-title="{{news.section}}" route-name='app.section' params="params"  text-decoration="none"  cursor-type="pointer" )
+                sv-custom-label(section-title="{{news.section}}" route-name='app.section' params="params"  text-decoration="none"  cursor-type="pointer" )
             div
                 span.display-block.fs-display-1 {{news.title|urlDecoderFr}}
             div.tc-grey-600

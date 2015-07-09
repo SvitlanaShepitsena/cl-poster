@@ -6,8 +6,8 @@
                 /*=events*/
                 .state("app.manager.create-event", {
                     url: "/create-event",
-                    controller: "CreateSvetEventCtrl as createSvetEvent",
-                    templateUrl: "scripts/events/views/create-svet-eventCtrl.html"
+                    controller: "CreateEventCtrl as createEvent",
+                    templateUrl: "scripts/events/views/create-eventCtrl.html"
                 })
                 .state("app.events", {
                     url: "/events",

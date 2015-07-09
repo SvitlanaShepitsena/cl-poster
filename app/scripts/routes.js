@@ -50,10 +50,10 @@
                         }
                     }
                 })
-                .state("app.svet-login", {
-                    url: "/svet-login",
-                    controller: "SvetLoginCtrl as login",
-                    templateUrl: "scripts/auth/views/svet-loginCtrl.html",
+                .state("app.cbi-login", {
+                    url: "/cbi-login",
+                    controller: "CbiLoginCtrl as login",
+                    templateUrl: "scripts/auth/views/cbi-loginCtrl.html",
                     resolve: {
                         currentUser: function (userAuth, $q) {
                             return $q(function (resolve, reject) {

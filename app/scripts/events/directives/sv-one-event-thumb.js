@@ -20,7 +20,7 @@
                         dt.vm = event;
                         $mdDialog.show({
                             controller: DialogControllerInfo,
-                            templateUrl: 'scripts/events/views/modalContentInfo.html',
+                            templateUrl: 'scripts/events/views/modalEventInfo.html',
                         });
                     }
 
