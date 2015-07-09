@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css"/>
     <link rel="stylesheet" href="./bower_components/textAngular/src/textAngular.css" type="text/css"/>
     <link rel="stylesheet" href="./bower_components/lumx/dist/lumx.css">
+    <link rel="stylesheet" href="styles/lumx-demo/lumx.css">
     <link rel="stylesheet" href="./bower_components/angular-toastr/dist/angular-toastr.min.css"/>
     <link rel="stylesheet" href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css">
 
@@ -81,16 +82,15 @@
     }(window, document, 'script'));
 </script>
 
-
+<md-toolbar class="sv-toolbar md-hue-3 md-primary  tc-white-1 pl" layout="row" layout-align="space-between center"
+            style="background-color:#474341">
+    <div layout="row" layout-align="center center">
+        <sv-weather-svet class="weather-widget"></sv-weather-svet>
+    </div>
+    <sv-social-top-nav hide-sm></sv-social-top-nav>
+    <sv-social-top-nav-cell hide-gt-sm></sv-social-top-nav-cell>
+</md-toolbar>
 <md-content layout="column" layout-fill>
-    <md-toolbar class="sv-toolbar md-hue-3 md-primary  tc-white-1 pl" layout="row" layout-align="space-between center"
-                style="background-color:#474341">
-        <div layout="row" layout-align="center center">
-            <sv-weather-svet class="weather-widget"></sv-weather-svet>
-        </div>
-        <sv-social-top-nav hide-sm></sv-social-top-nav>
-        <sv-social-top-nav-cell hide-gt-sm></sv-social-top-nav-cell>
-    </md-toolbar>
     <md-content layout="row" layout-fill flex>
         <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
                     md-is-locked-open="$mdMedia('gt-md')">
@@ -589,7 +589,6 @@
 <script src="scripts/sections/home/controllers/HomeCtrl.js"></script>
 <script src="scripts/sections/home/controllers/AppCtrl.js"></script>
 <script src="scripts/sections/home/directives/sv-top-news.js"></script>
-<script src="scripts/sections/home/directives/sv-from-the-editor.js"></script>
 <script src="scripts/sections/home/directives/sv-section-news.js"></script>
 <script src="scripts/sections/home/directives/sv-news-grid.js"></script>
 <script src="scripts/sections/home/directives/sv-second-news.js"></script>

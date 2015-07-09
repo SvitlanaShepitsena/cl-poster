@@ -30,5 +30,5 @@
         .value('weather', 'https://publicdata-weather.firebaseio.com/chicago')
         .value('avatar', '/img/auth/user.png')
         .value('defimg', '/img/common/picture-thumb.png')
-        .value('alex', '/img/auth/alex-sepia.jpg')
+        .value('editor', '/img/auth/author.png')
 })();
