@@ -113,7 +113,9 @@
                 <sv-news-sections-nav class="mb"></sv-news-sections-nav>
 
                 <sv-sidenav-title title="My Photos" class="mb"></sv-sidenav-title>
-                <sv-sidenav-ad album-title="Album Title" album-url="app.events.photoAlbums" album-img="https://s3-us-west-2.amazonaws.com/chicagopics/chicago-view-color.jpg" album-body="Any info..."></sv-sidenav-ad>
+                <sv-sidenav-ad album-title="Album Title" album-url="app.events.photoAlbums"
+                               album-img="https://s3-us-west-2.amazonaws.com/chicagopics/chicago-view-color.jpg"
+                               album-body="Any info..."></sv-sidenav-ad>
                 <div class='mt+'></div>
             </md-content>
         </md-sidenav>
@@ -291,22 +293,19 @@
 
 <!-- common -->
 <script src="scripts/common/commonRoutes.js"></script>
+<script src="scripts/common/controllers/GoogleAnalyticsCtrl.js"></script>
+<script src="scripts/common/controllers/SectionCtrl.js"></script>
 <script src="scripts/common/directives/sv-fade-in.js"></script>
-<script src="scripts/common/services/AWSServ.js"></script>
 <script src="scripts/common/directives/sv-img-framed-string.js"></script>
-<script src="scripts/common/controllers/GaCtrl.js"></script>
 <script src="scripts/common/directives/sv-analytics-info.js"></script>
 <script src="scripts/common/directives/sv-image-thumb.js"></script>
 <script src="scripts/common/directives/sv-contact-info.js"></script>
-<script src="scripts/common/common-translation.js"></script>
-<script src="scripts/common/controllers/SectionCtrl.js"></script>
 <script src="scripts/common/directives/sv-fb-like.js"></script>
 <script src="scripts/common/directives/sv-image-scale.js"></script>
 <script src="scripts/common/directives/sv-one-photo-album.js"></script>
 <script src="scripts/common/directives/sv-animate-on-index-change.js"></script>
 <script src="scripts/common/directives/sv-test-repo-informer.js"></script>
 <script src="scripts/common/directives/sv-img-background.js"></script>
-<script src="scripts/common/services/ImageValidationServ.js"></script>
 <script src="scripts/common/directives/sv-ban-btn.js"></script>
 <script src="scripts/common/directives/sv-status-label.js"></script>
 <script src="scripts/common/directives/sv-quick-look-btn.js"></script>
@@ -320,10 +319,6 @@
 <script src="scripts/common/directives/sv-lumx-users-dropdown.js"></script>
 <script src="scripts/common/directives/sv-lumx-button.js"></script>
 <script src="scripts/common/directives/sv-link-back.js"></script>
-<script src="scripts/common/services/HtmlParseServ.js"></script>
-<script src="scripts/common/services/TagsServ.js"></script>
-<script src="scripts/common/services/FormattedDateServ.js"></script>
-<script src="scripts/common/services/NewsGeneratorServ.js"></script>
 <script src="scripts/common/filters/sectionNews.js"></script>
 <script src="scripts/common/directives/sv-bottom-sheet-handler.js"></script>
 <script src="scripts/common/directives/sv-nav-btn.js"></script>
@@ -338,11 +333,17 @@
 <script src="scripts/common/directives/sv-img-framed.js"></script>
 <script src="scripts/common/directives/sv-left-click-handler.js"></script>
 <script src="scripts/common/directives/sv-right-click-handler.js"></script>
+<script src="scripts/common/directives/sv-modal-window-size-media.js"></script>
+<script src="scripts/common/services/AWSServ.js"></script>
+<script src="scripts/common/services/FormattedDateServ.js"></script>
+<script src="scripts/common/services/HtmlParseServ.js"></script>
+<script src="scripts/common/services/ImageSizeServ.js"></script>
+<script src="scripts/common/services/ImageValidationServ.js"></script>
+<script src="scripts/common/services/NewsGeneratorServ.js"></script>
+<script src="scripts/common/services/TagsServ.js"></script>
 <script src="scripts/common/settings/colors.js"></script>
 <script src="scripts/common/settings/icons.js"></script>
 <script src="scripts/common/settings/constants.js"></script>
-<script src="scripts/common/services/ImageSizeServ.js"></script>
-<script src="scripts/common/directives/sv-modal-window-size-media.js"></script>
 
 
 <!-- auth -->

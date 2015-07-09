@@ -7,7 +7,7 @@
                 link: function ($scope, el, attrs) {
                     $scope.user = userAuth.profile;
                     $scope.defaultAvatar = avatar;
-                    $scope.alexAvatar = editor;
+                    $scope.editorAvatar = editor;
                 }
             };
         });
