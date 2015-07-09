@@ -7,7 +7,7 @@
 
             function setPublicNewsLive(articles) {
                 var freshArticles = NewsTimeSelectorServ.select(articles);
-                var publicNews = _.where(freshArticles, {isPublic: true, isBlog: false});
+                var publicNews = _.where(freshArticles, {isPublic: true});
                 svetNews.public = _.sortBy(publicNews, 'newsOrder');
             }
 

@@ -4,7 +4,7 @@
         .filter('sectionNews', function () {
             return function (list, section) {
                 if (!list || !section) return list;
-                if (section === 'svet-recommends') {
+                if (section === 'we-recommend') {
                     var finalList = _.filter(list, function (item) {
                         return item.svetRecommends;
                     });

@@ -59,7 +59,7 @@
                 'login-title': 'Вход',
                 'quick-look': 'Просмотр',
                 'full-description': 'Подробнее',
-                'login:title': 'Авторизация Svet Russian Media Group',
+                'login:title': 'Авторизация',
                 'not-registered': 'Не зарегистрированы',
                 'registered-users': 'Зарегистрировались',
                 'required-field': '* Обязательное Поле',

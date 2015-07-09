@@ -3,14 +3,14 @@
     angular.module('auth')
         .controller('CreateEventCtrl', function (ConnectionEventServ, $scope, toastr, $state) {
             $scope.event = {
-                type: 'corporates',
-                title: 'Svet Connection Meeting',
-                description: 'Svet Connection networking event helps to increase collaboration among Svet Russian Media Group Partners and build lasting relationships where all parties can help one another',
+                type: '',
+                title: '',
+                description: '',
                 date: new Date('01/06/2015'),
                 startTime: new Date('01/06/2015 10:00:AM'),
                 endTime: new Date('01/06/2015 1:00:PM'),
-                address: 'Viper Alley. 275 Parkway Dr Lincolnshire, IL 60069',
-                admission: 'Svet Partners'
+                address: '',
+                admission: ''
             };
             $scope.createNewEvent = function () {
                 var event = $scope.event;

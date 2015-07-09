@@ -5,7 +5,7 @@
             $translateProvider.useCookieStorage();
             $translateProvider.translations('en', {
                 // 'eng':'eng'
-                'svet-recommends': 'Endorsed by Svet',
+                'we-recommend': 'Endorsed',
                 'featured': 'featured',
                 'your-comment': 'Your Comment',
                 'this-week': 'This Week',
@@ -68,7 +68,7 @@
             });
             $translateProvider.translations('ru', {
                 // 'ru':'ru'
-                'svet-recommends': 'Свет Рекомендует',
+                'we-recommend': 'Рекомендуем',
                 'recommended': 'Рекомендуемое',
                 'featured': 'Похожее',
                 'your-comment': 'Ваш Комментарий',
